@@ -3,7 +3,7 @@ echo "Building the sample project..."
 #!/bin/bash
 
 # Run the Python script to check if it works
-/usr/bin/python3 sample.py
+python3 sample.py
 
 # Check for PEP 8 compliance
 echo "Checking for PEP 8 compliance..."
