@@ -5,7 +5,8 @@ set -e
 
 echo "Creating virtual environment..."
 python3 -m venv venv
-source venv/bin/activate
+. venv/bin/activate
+
 
 echo "Installing dependencies..."
 pip install --upgrade pip
