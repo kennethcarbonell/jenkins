@@ -5,8 +5,9 @@ set -e
 
 echo "Creating virtual environment..."
 python3 -m venv venv
-. venv/bin/activate
+source venv/bin/activate
 
+cd ~/jenkins
 
 echo "Installing dependencies..."
 pip install --upgrade pip
