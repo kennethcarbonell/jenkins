@@ -1,5 +1,10 @@
 echo "Building the sample project..."
 # Install dependencies
+#!/bin/bash
+set -e
+
+echo "Installing dependencies..."
+pip install --quiet --upgrade pip pycodestyle
 
 # Run the Python script to check if it works
 python3 sample.py
