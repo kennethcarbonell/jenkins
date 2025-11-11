@@ -5,12 +5,12 @@ set -e
 
 echo "Creating virtual environment..."
 python3 -m venv venv
-source venv/bin/activate
+. venv/bin/activate
 
-cd ~/jenkins
+apt update
+apt install -y python3-pip python3-pycodestyle
 
 echo "Installing dependencies..."
-pip install --upgrade pip
 pip install pycodestyle
 
 # Run the Python script to check if it works
